@@ -396,6 +396,17 @@ figure { margin: 0; }
 }
 .quote p em { color: var(--white); }
 
+/* Everyone's welcome */
+.welcome-title {
+  font-size: clamp(2.3rem, 1.5rem + 3.4vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  max-width: 11ch;
+  margin-bottom: .6em;
+}
+.welcome-text p { color: var(--text-soft); max-width: 34em; }
+.welcome-text .welcome-cta { color: var(--her-blue); font-family: var(--font-display); font-style: italic; font-size: 1.2rem; margin: 0; }
+
 /* Join */
 .join {
   background: var(--her-blue);
@@ -516,6 +527,14 @@ figure { margin: 0; }
     align-items: center;
   }
   .community-media { margin-top: 0; }
+
+  .welcome-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: end;
+  }
+  .welcome-title { margin-bottom: 0; }
   .stats { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .partners-logos { --logo-h: 58px; }
   .footer-inner { grid-template-columns: 1fr auto; align-items: start; }
