@@ -29,3 +29,7 @@ Fonts: **Playfair Display** for headings, **Source Serif 4** for body text (a we
 
 ## Before launch
 - Set the LinkedIn URL in `index.html` (search for `TODO`).
+
+## TODO
+- [ ] Add the team
+- [ ] Vision of BoostHer
