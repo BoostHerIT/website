@@ -23,7 +23,6 @@
   --font-display: "Playfair Display", "Times New Roman", Times, serif;
   --font-body: "Source Serif 4", "Times New Roman", Times, serif;
   --font-label: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-  --font-script: "Pinyon Script", "Snell Roundhand", "Apple Chancery", cursive;
 
   /* Layout */
   --container: 1120px;
@@ -98,32 +97,18 @@ a { color: inherit; }
 }
 .eyebrow--light { color: var(--rosa); }
 
-/* ---------- Logo (Boost image + live "Her" script) ---------- */
+/* ---------- Logo (official artwork from the brand guide) ---------- */
 .logo {
-  --w: 140px;
+  --w: 128px;
   position: relative;
   display: inline-block;
   width: var(--w);
   text-decoration: none;
-  padding-bottom: calc(var(--w) * .2);
 }
 .site-header .logo { z-index: 2; } /* stay visible above the open mobile menu */
 .logo img { width: 100%; height: auto; }
-.logo-her {
-  position: absolute;
-  left: 66%;
-  top: 46%;
-  font-family: var(--font-script);
-  font-size: calc(var(--w) * .34);
-  line-height: 1;
-  color: var(--her-blue);
-  white-space: nowrap;
-  pointer-events: none;
-  -webkit-text-stroke: .025em currentColor; /* closer to the heavier brand script */
-}
-.logo--sm { --w: 104px; }
-.logo--md { --w: 150px; }
-.logo--white .logo-her { color: var(--rosa); }
+.logo--sm { --w: 128px; }
+.logo--md { --w: 180px; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -482,7 +467,7 @@ figure { margin: 0; }
 
 @media (min-width: 900px) {
   :root { --gutter: 40px; --section-y: 128px; }
-  .logo--sm { --w: 118px; }
+  .logo--sm { --w: 140px; }
   .hero { padding: 150px 0 110px; }
   .hero-grid {
     display: grid;
